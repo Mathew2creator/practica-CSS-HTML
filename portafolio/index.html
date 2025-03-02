@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <h1>Bienvenido a mi Portfolio</h1>
+    </section>
+
+    <section id="about">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy un jóven que le encanta el desarrollo web, Desde que era pequeño, me sentí atraído por la tecnología. 
+        Cada vez que veía una página web, me preguntaba cómo había sido creada. Así comenzó mi sueño de convertirme en un desarrollador web....</p>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <div class="skill">
+            <label for="html">HTML</label>
+            <progress id="html" value="80" max="100"></progress>
+        </div>
+        <div class="skill">
+            <label for="css">CSS</label>
+            <progress id="css" value="75" max="100"></progress>
+        </div>
+        <div class="skill">
+            <label for="js">JavaScript</label>
+            <progress id="js" value="60" max="100"></progress>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <form action="#" method="post">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="surname">Apellidos</label>
+            <input type="text" id="surname" name="surname" required>
+
+            <label for="phone">Teléfono</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <br><label>¿Cómo me conociste?</label><br>
+            <br><input type="radio" id="university" name="how" value="Universidad" required>
+            <label for="university">Universidad</label>
+            <input type="radio" id="kickoff" name="how" value="Kick-off" required>
+            <label for="kickoff">Keepcoding Kick-off</label>
+            <input type="radio" id="github" name="how" value="GitHub" required>
+            <label for="github">En Github</label>
+
+            <br><br><label for="github-tag">Tag de GitHub</label>
+            <input type="text" id="github-tag" name="github-tag" pattern="^@[^\s]+" required><br>
+
+            <br><label for="message">Mas información</label>
+            <textarea id="message" name="message" maxlength="180'" required></textarea>
+
+            <br><br>Quiero acceso a la newsletter</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Restablecer</button>
+        </form>
+
+        <!-- Sección de Video -->
+        <div class="video-container">
+            <iframe id="video" src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Sección de Proyectos -->
+    <section id="projects" class="proyectos">
+        <h2>Mis Proyectos</h2>
+        <div class="proyecto">
+            <h3>Página de Venta de Vehículos</h3>
+            <p>Una plataforma para comprar y vender vehículos de diferentes marcas y modelos.</p>
+            <a href="https://crautos.com/" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="proyecto">
+            <h3>Página de Venta de Electrodomésticos</h3>
+            <p>Una tienda en línea para la compra de electrodomésticos de las mejores marcas.</p>
+            <a href="https://letyshops.com/us-es/c/home-appliances" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="proyecto">
+            <h3>Página de Venta de Propiedades</h3>
+            <p>Plataforma para comprar, vender o alquilar propiedades residenciales y comerciales.</p>
+            <a href="https://www.encuentra24.com/costa-rica-es/bienes-raices-venta-de-propiedades-casas?utm_source=adwords&utm_medium=paid-search&utm_campaign=CR_BienesRaices_Venta_Search_Lead_AO_ES_g&utm_term=propiedades%20en%20venta&gad_source=1&gclid=CjwKCAiAt4C-BhBcEiwA8Kp0CQvIGoopSMtowTyzCkU11lYvjOUUGV2THluRTbNKtj8SH1ZAJzgdCRoCBSgQAvD_BwE" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="proyecto">
+            <h3>Página de Venta de Películas en Estreno</h3>
+            <p>Plataforma para comprar entradas o realizar streaming de películas en estreno.</p>
+            <a href="https://www.novacinemas.cr/" target="_blank">Ver Proyecto</a>
+        </div>
+        <div class="proyecto">
+            <h3>Página de Venta de Celulares</h3>
+            <p>Un sitio web dedicado a la compra y venta de los últimos modelos de celulares.</p>
+            <a href="https://tvoutlet.tv/product-categorie/smartphones/?gad_source=1&gclid=CjwKCAiAt4C-BhBcEiwA8Kp0CZsDIra-ZR4jzjmadwg5O1OAbHBTEH0KK5EOBayxxsiRwbHMxXKX6RoCYtgQAvD_BwE" target="_blank">Ver Proyecto</a>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="https://github.com/Mathew2creator" target="_blank">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
+
